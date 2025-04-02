@@ -2288,18 +2288,22 @@ html {
 }
 
 .gift-card-btn {
-    padding: 15px 35px;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
-    border: none;
-    border-radius: 50px;
-    color: white;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    position: relative;
-    overflow: hidden;
+    padding: 15px 35px !important;
+    font-size: 1.1rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    border: none !important;
+    border-radius: 50px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.gift-card-btn:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3) !important;
+    background: linear-gradient(135deg, #FF8E53 0%, #FF6B6B 100%) !important;
 }
 
 .gift-card-btn::before {
@@ -2311,13 +2315,6 @@ html {
     height: 100%;
     background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
     transition: all 0.6s ease;
-}
-
-.gift-card-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    color: white;
-    background: linear-gradient(135deg, #FF8E53 0%, #FF6B6B 100%);
 }
 
 .gift-card-btn:hover::before {
