@@ -2292,7 +2292,7 @@ html {
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%);
     border: none;
     border-radius: 50px;
     color: white;
@@ -2317,16 +2317,25 @@ html {
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     color: white;
+    background: linear-gradient(135deg, #FF8E53 0%, #FF6B6B 100%);
 }
 
 .gift-card-btn:hover::before {
     left: 100%;
 }
 
+.gift-card-image {
+    padding: 20px;
+}
+
 .gift-card-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    margin: 0 auto;
+    display: block;
 }
 
 .gift-card-image img:hover {
