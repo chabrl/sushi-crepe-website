@@ -2292,7 +2292,7 @@ html {
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
     border: none;
     border-radius: 50px;
     color: white;
@@ -2331,6 +2331,56 @@ html {
 
 .gift-card-image img:hover {
     transform: scale(1.02);
+}
+
+.gift-card-image-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.gift-card-image-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.gift-card-image-link::after {
+    content: attr(data-buy-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease;
+}
+
+.gift-card-image-link:hover {
+    transform: scale(1.02);
+}
+
+.gift-card-image-link:hover::before,
+.gift-card-image-link:hover::after {
+    opacity: 1;
+}
+
+.gift-card-image-link img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 @media (max-width: 768px) {
