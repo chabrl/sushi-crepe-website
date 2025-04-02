@@ -2236,51 +2236,109 @@ html {
 /* Gift Cards Section */
 .gift-cards-section {
     padding: 80px 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/gift-card-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: #fff;
+    position: relative;
+    background-color: var(--light-bg);
+    overflow: hidden;
+}
+
+.gift-cards-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><path d="M30 0L60 30L30 60L0 30L30 0Z" fill="rgba(157, 189, 141, 0.1)"/></svg>') repeat;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.gift-cards-section .container {
+    position: relative;
+    z-index: 2;
 }
 
 .gift-card-content {
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gift-card-content:hover {
+    transform: translateY(-5px);
 }
 
 .gift-card-description {
     font-size: 1.2rem;
     margin: 20px 0;
     line-height: 1.6;
+    color: var(--text-color);
 }
 
 .gift-card-instructions {
-    background: rgba(255, 255, 255, 0.15);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
+    background: var(--light-bg);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 25px 0;
     white-space: pre-line;
+    color: var(--text-color);
+    border-left: 4px solid var(--primary-color);
 }
 
 .gift-card-btn {
-    padding: 12px 30px;
+    padding: 15px 35px;
     font-size: 1.1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     border: none;
+    border-radius: 50px;
+    color: white;
     transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.gift-card-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: all 0.6s ease;
 }
 
 .gift-card-btn:hover {
-    background-color: var(--secondary-color);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.gift-card-btn:hover::before {
+    left: 100%;
 }
 
 .gift-card-image img {
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gift-card-image img:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .gift-cards-section {
+        padding: 60px 0;
+    }
+    
+    .gift-card-content {
+        margin-bottom: 30px;
+    }
 }
