@@ -69,6 +69,12 @@ var translations = {
         saturdayHours: "8:00 AM - 8:30 PM",
         sundayHours: "8:00 AM - 8:30 PM",
 
+        // Gift Card Section
+        giftCardTitle: "Gift Cards",
+        giftCardDescription: "Give the gift of a unique culinary experience with our gift cards! Perfect for any occasion.",
+        giftCardInstructions: "How it works:\n1. Click the button below\n2. Choose your desired amount\n3. The gift card will be sent by email immediately after purchase",
+        buyGiftCard: "Buy a Gift Card",
+
         // Footer
         copyright: " 2025 Sushi Crêpe & Coffee Shop Inc. All rights reserved.",
         followUs: "Follow Us",
@@ -146,6 +152,12 @@ var translations = {
         fridayHours: "8h00 - 23h00",
         saturdayHours: "8h00 - 20h30",
         sundayHours: "8h00 - 20h30",
+
+        // Gift Card Section
+        giftCardTitle: "Cartes-Cadeaux",
+        giftCardDescription: "Offrez une expérience culinaire unique avec nos cartes-cadeaux! Parfait pour toutes les occasions.",
+        giftCardInstructions: "Comment ça fonctionne:\n1. Cliquez sur le bouton ci-dessous\n2. Choisissez le montant désiré\n3. La carte-cadeau sera envoyée par courriel immédiatement après l'achat",
+        buyGiftCard: "Acheter une Carte-Cadeau",
 
         // Footer
         copyright: " 2025 Sushi Crêpe & Coffee Shop Inc. Tous droits réservés.",
