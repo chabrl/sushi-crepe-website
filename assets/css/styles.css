@@ -2287,7 +2287,10 @@ html {
     border-left: 4px solid var(--primary-color);
 }
 
-.gift-card-btn {
+#gift-cards .gift-card-btn,
+.gift-card-btn.btn {
+    background: linear-gradient(135deg, #FF6B6B 0%, #FF8E53 100%) !important;
+    color: white !important;
     padding: 15px 35px !important;
     font-size: 1.1rem !important;
     text-transform: uppercase !important;
@@ -2300,13 +2303,15 @@ html {
     overflow: hidden !important;
 }
 
-.gift-card-btn:hover {
+#gift-cards .gift-card-btn:hover,
+.gift-card-btn.btn:hover {
     transform: translateY(-3px) !important;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3) !important;
     background: linear-gradient(135deg, #FF8E53 0%, #FF6B6B 100%) !important;
 }
 
-.gift-card-btn::before {
+#gift-cards .gift-card-btn::before,
+.gift-card-btn.btn::before {
     content: '';
     position: absolute;
     top: 0;
@@ -2317,7 +2322,8 @@ html {
     transition: all 0.6s ease;
 }
 
-.gift-card-btn:hover::before {
+#gift-cards .gift-card-btn:hover::before,
+.gift-card-btn.btn:hover::before {
     left: 100%;
 }
 
