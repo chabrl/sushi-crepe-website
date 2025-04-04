@@ -76,13 +76,17 @@ const translations = {
         buyLabel: "Buy",
 
         // Footer
-        copyright: " 2025 Sushi Crêpe & Coffee Shop Inc. All rights reserved.",
+        copyright: " 2025 Sushi Crêpe Inc. All rights reserved.",
         followUs: "Follow Us",
         newsletter: "Newsletter",
         subscribeText: "Subscribe to our newsletter",
         subscribe: "Subscribe",
         emailPlaceholder: "Your email",
-        socialMedia: "Follow us on social media"
+        socialMedia: "Follow us on social media",
+        
+        // Messenger Button
+        messageUs: "Message Us",
+
     },
     fr: {
         // Navigation
@@ -160,12 +164,15 @@ const translations = {
         buyLabel: "Acheter",
 
         // Footer
-        copyright: " 2025 Sushi Crêpe & Coffee Shop Inc. Tous droits réservés.",
+        copyright: " 2025 Sushi Crêpe Inc. Tous droits réservés.",
         followUs: "Suivez-nous",
         newsletter: "Infolettre",
         subscribeText: "Abonnez-vous à notre infolettre",
         subscribe: "S'abonner",
         emailPlaceholder: "Votre courriel",
-        socialMedia: "Suivez-nous sur les réseaux sociaux"
+        socialMedia: "Suivez-nous sur les réseaux sociaux",
+        
+        // Messenger Button
+        messageUs: "Contactez-nous",
     }
 };
