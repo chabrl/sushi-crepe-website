@@ -110,13 +110,14 @@
             background-color: #0084ff;
             color: white;
             border: none;
-            border-radius: 50px;
-            padding: 12px 24px;
-            font-size: 16px;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
             cursor: pointer;
             display: flex;
             align-items: center;
-            gap: 8px;
+            justify-content: center;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             transition: all 0.3s ease;
         }
@@ -127,14 +128,11 @@
             box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
         }
 
-        .messenger-button i {
-            font-size: 20px;
-        }
-
         @media (max-width: 768px) {
             .messenger-button {
-                padding: 10px 20px;
-                font-size: 14px;
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
                 bottom: 15px;
                 right: 15px;
             }
@@ -670,9 +668,8 @@
     </div>
 
     <!-- Facebook Messenger Button -->
-    <a href="https://m.me/114539400465483" target="_blank" class="messenger-button">
+    <a href="https://m.me/114539400465483" target="_blank" class="messenger-button" aria-label="Message us on Facebook">
         <i class="fab fa-facebook-messenger"></i>
-        <span data-translate="messageUs">Message Us</span>
     </a>
 
     <!-- Scripts -->

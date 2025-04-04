@@ -83,10 +83,6 @@ const translations = {
         subscribe: "Subscribe",
         emailPlaceholder: "Your email",
         socialMedia: "Follow us on social media",
-        
-        // Messenger Button
-        messageUs: "Message Us",
-
     },
     fr: {
         // Navigation
@@ -171,8 +167,5 @@ const translations = {
         subscribe: "S'abonner",
         emailPlaceholder: "Votre courriel",
         socialMedia: "Suivez-nous sur les réseaux sociaux",
-        
-        // Messenger Button
-        messageUs: "Contactez-nous",
     }
 };
