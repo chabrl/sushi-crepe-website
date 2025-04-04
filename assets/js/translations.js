@@ -17,7 +17,6 @@ const translations = {
         // About Section
         aboutTitle: "Our Story",
         aboutDescription: "At Sushi Crêpe & Coffee Shop, every bite tells a story. We offer a unique variety of sweet and savory crepes, all prepared to order with fresh ingredients and a touch of creativity.",
-        aboutButton: "Learn More",
         aboutText: "We are a family-owned crêperie located in the heart of Lennoxville, Sherbrooke, with a story as unique as our menu. It all started when my wife, a big sushi lover, asked me to buy some and bring them home. I decided to play a little joke on her by preparing a sweet crêpe inspired by sushi. To her surprise, she loved it! Her enthusiasm inspired us to incorporate this playful creation into our crêperie. Today, Sushi Crêpe & Coffee Shop stands out by blending creativity and tradition, offering both sweet and savory crepes made with the freshest ingredients. Our goal is to surprise and delight our customers with flavors that tell our story and bring a smile to their faces.",
 
         // Delivery Section
@@ -102,7 +101,6 @@ const translations = {
         // About Section
         aboutTitle: "Notre Histoire",
         aboutDescription: "Chez Sushi Crêpe & Coffee Shop, chaque bouchée raconte une histoire. Nous proposons une variété unique de crêpes sucrées et salées, toutes préparées sur commande avec des ingrédients frais et une touche de créativité.",
-        aboutButton: "En savoir plus",
         aboutText: "Nous sommes une crêperie familiale située au cœur de Lennoxville, Sherbrooke, avec une histoire aussi unique que notre menu. Tout a commencé lorsque ma femme, une grande amatrice de sushi, m'a demandé d'en acheter et de les rapporter à la maison. J'ai décidé de lui faire une petite blague en préparant une crêpe sucrée inspirée des sushi. À sa surprise, elle a adoré ! Son enthousiasme nous a inspiré à intégrer cette création ludique dans notre crêperie. Aujourd'hui, Sushi Crêpe & Coffee Shop se distingue en mélangeant créativité et tradition, offrant des crêpes sucrées et salées préparées avec les ingrédients les plus frais. Notre objectif est de surprendre et de ravir nos clients avec des saveurs qui racontent notre histoire et apportent un sourire à leur visage.",
 
         // Delivery Section
