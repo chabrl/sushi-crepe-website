@@ -1,4 +1,115 @@
-// Define translations object in the global scope
+// Initialize language from localStorage or default to French
+let currentLanguage = localStorage.getItem('language') || 'fr';
+
+// Set initial HTML lang attribute
+document.documentElement.lang = currentLanguage;
+
+// Function to get current language
+function getCurrentLanguage() {
+    return currentLanguage;
+}
+
+// Function to switch language
+function switchLanguage(lang) {
+    // Update current language
+    currentLanguage = lang;
+    
+    // Save to localStorage
+    localStorage.setItem('language', lang);
+    
+    // Update HTML lang attribute
+    document.documentElement.lang = lang;
+    
+    // Update all translatable elements
+    updateTranslations();
+}
+
+// Function to update all translations
+function updateTranslations() {
+    // Update elements with data-translate attribute
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (translations[currentLanguage][key]) {
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                // For input elements, update placeholder
+                element.placeholder = translations[currentLanguage][key];
+            } else if (element.tagName === 'A' && element.hasAttribute('title')) {
+                // For links with titles, update both text and title
+                element.textContent = translations[currentLanguage][key];
+                element.title = translations[currentLanguage][key];
+            } else {
+                // For regular elements, update text content
+                element.textContent = translations[currentLanguage][key];
+            }
+        }
+    });
+
+    // Update elements with data-translate-html attribute (for HTML content)
+    document.querySelectorAll('[data-translate-html]').forEach(element => {
+        const key = element.getAttribute('data-translate-html');
+        if (translations[currentLanguage][key]) {
+            element.innerHTML = translations[currentLanguage][key];
+        }
+    });
+
+    // Update meta tags
+    document.querySelectorAll('meta[data-translate-content]').forEach(meta => {
+        const key = meta.getAttribute('data-translate-content');
+        if (translations[currentLanguage][key]) {
+            meta.content = translations[currentLanguage][key];
+        }
+    });
+
+    // Update any custom components that need translation
+    if (window.updateReviews) {
+        window.updateReviews();
+    }
+}
+
+// Add click handlers to language switcher buttons
+document.addEventListener('DOMContentLoaded', () => {
+    // Initial translation
+    updateTranslations();
+
+    // Set up language switcher buttons
+    const frButton = document.getElementById('fr-lang');
+    const enButton = document.getElementById('en-lang');
+
+    if (frButton) {
+        frButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            switchLanguage('fr');
+        });
+    }
+
+    if (enButton) {
+        enButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            switchLanguage('en');
+        });
+    }
+
+    // Update active state of language buttons
+    updateLanguageButtons();
+});
+
+// Function to update language button states
+function updateLanguageButtons() {
+    const frButton = document.getElementById('fr-lang');
+    const enButton = document.getElementById('en-lang');
+
+    if (frButton && enButton) {
+        if (currentLanguage === 'fr') {
+            frButton.classList.add('active');
+            enButton.classList.remove('active');
+        } else {
+            enButton.classList.add('active');
+            frButton.classList.remove('active');
+        }
+    }
+}
+
+// Translations object
 const translations = {
     en: {
         // Navigation

@@ -191,6 +191,37 @@ h1, h2, h3 {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Language Switcher */
+.language-switcher {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.language-switcher .btn-link {
+    color: #333;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.language-switcher .btn-link.active {
+    color: #000;
+    font-weight: 700;
+}
+
+.language-switcher .separator {
+    color: #666;
+    margin: 0 0.25rem;
+}
+
+@media (max-width: 768px) {
+    .language-switcher {
+        margin: 0.5rem 0;
+    }
+}
+
 /* Language Buttons */
 .btn-outline-light {
     border: 2px solid #fff;

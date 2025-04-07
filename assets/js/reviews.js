@@ -51,7 +51,7 @@ function loadGoogleReviews() {
     };
 
     const container = document.getElementById('reviews-container');
-    const currentLang = document.documentElement.lang || 'fr'; // Default to French if not set
+    const currentLang = getCurrentLanguage(); // Use the existing language function
     const currentReviews = reviews[currentLang] || reviews.fr; // Use French reviews as fallback
     
     container.innerHTML = ''; // Clear existing reviews
@@ -77,8 +77,21 @@ function loadGoogleReviews() {
         
         container.appendChild(reviewElement);
     });
+
+    // Update section title and description
+    const titleElement = document.querySelector('[data-translate="googleReviews"]');
+    const descElement = document.querySelector('[data-translate="reviewsDesc"]');
+    if (titleElement) titleElement.textContent = translations[currentLang].googleReviews;
+    if (descElement) descElement.textContent = translations[currentLang].reviewsDesc;
 }
 
 // Call the function when the document is loaded and when language changes
 document.addEventListener('DOMContentLoaded', loadGoogleReviews);
-document.addEventListener('languageChanged', loadGoogleReviews); // Custom event for language changes
+
+// Add this function to update reviews when language changes
+function updateReviews() {
+    loadGoogleReviews();
+}
+
+// Add the updateReviews function to the window object so it can be called from translations.js
+window.updateReviews = updateReviews;

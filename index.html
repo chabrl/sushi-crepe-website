@@ -239,14 +239,10 @@
                     <li class="nav-item">
                         <a class="nav-link btn btn-primary text-white" href="https://www.clover.com/online-ordering/sushi-crpe-inc-sherbrooke" target="_blank" data-translate="orderNow">Commander</a>
                     </li>
-                    <div class="nav-item dropdown">
-                        <button class="nav-link dropdown-toggle" id="languageDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-globe"></i>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdown">
-                            <li><button class="dropdown-item" onclick="changeLanguage('en')">English</button></li>
-                            <li><button class="dropdown-item" onclick="changeLanguage('fr')">Français</button></li>
-                        </ul>
+                    <div class="nav-item language-switcher">
+                        <button id="fr-lang" class="btn btn-link active" aria-label="Français">FR</button>
+                        <span class="separator">|</span>
+                        <button id="en-lang" class="btn btn-link" aria-label="English">EN</button>
                     </div>
                 </ul>
             </div>
