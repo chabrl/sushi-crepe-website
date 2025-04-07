@@ -75,6 +75,14 @@ const translations = {
         buyGiftCard: "Buy a Gift Card",
         buyLabel: "Buy",
 
+        // Reviews Section
+        googleReviews: "Google Reviews",
+        reviewsDesc: "What our customers say about us",
+        seeAllReviews: "See all reviews on Google",
+        weekAgo: "a week ago",
+        weeksAgo: "weeks ago",
+        monthAgo: "a month ago",
+
         // Footer
         copyright: " 2025 Sushi Crêpe Inc. All rights reserved.",
         followUs: "Follow Us",
@@ -158,6 +166,14 @@ const translations = {
         giftCardInstructions: "Comment ça fonctionne:\n1. Cliquez sur le bouton ci-dessous\n2. Choisissez le montant désiré\n3. La carte-cadeau sera envoyée par courriel immédiatement après l'achat",
         buyGiftCard: "Acheter une Carte-Cadeau",
         buyLabel: "Acheter",
+
+        // Reviews Section
+        googleReviews: "Avis Google",
+        reviewsDesc: "Ce que nos clients disent de nous",
+        seeAllReviews: "Voir tous les avis sur Google",
+        weekAgo: "il y a une semaine",
+        weeksAgo: "il y a des semaines",
+        monthAgo: "il y a un mois",
 
         // Footer
         copyright: " 2025 Sushi Crêpe Inc. Tous droits réservés.",
