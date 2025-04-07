@@ -1665,9 +1665,14 @@ h2 {
     }
 }
 
-/* Add smooth scroll behavior */
+/* Enable smooth scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+/* Offset anchor links to account for fixed navbar */
+:target {
+    scroll-margin-top: 80px;
 }
 
 /* Add a subtle gradient background to the reviews section */

@@ -113,6 +113,7 @@ function updateLanguageButtons() {
 const translations = {
     en: {
         // Navigation
+        brandName: "Sushi Crêpe",
         home: "Home",
         about: "About",
         contact: "Contact",
@@ -205,6 +206,7 @@ const translations = {
     },
     fr: {
         // Navigation
+        brandName: "Sushi Crêpe",
         home: "Accueil",
         about: "À propos",
         contact: "Contact",
