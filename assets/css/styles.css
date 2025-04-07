@@ -14,9 +14,10 @@ h1, h2, h3 {
 
 /* Header/Navigation */
 .navbar {
-    background-color: rgba(255, 255, 255, 0.95);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #9dbd8d;
+    transition: all 0.3s ease;
     padding: 0.5rem 0;
+    box-shadow: 0 2px 8px rgba(157, 189, 141, 0.2);
 }
 
 .navbar.scrolled {
@@ -1404,7 +1405,7 @@ h2 {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .birthday-form:hover {
@@ -1452,7 +1453,7 @@ h2 {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .about-text:hover {
